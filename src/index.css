@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/15 backdrop-blur-md border border-white/30 shadow-2xl rounded-3xl;
+  }
+  .glass-button {
+    @apply bg-white/25 hover:bg-white/35 border border-white/40 backdrop-blur-md transition-all duration-300 active:scale-95;
+  }
+}
+
+/* Smooth background transition */
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  background-color: #0f172a;
+}
